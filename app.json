@@ -1,27 +1,98 @@
 {
   "expo": {
-    "name": "blank-fix-version",
-    "slug": "blank-fix-version",
-    "version": "1.0.0",
-    "orientation": "portrait",
-    "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
+    "name": "SRI Movil",
+    "slug": "sri-movil",
+    "version": "1.10.0",
+    "owner": "consultoriazimpledev",
+    "orientation": "default",
+    "icon": "./assets/images/IconoAsturiano.png",
     "splash": {
-      "image": "./assets/splash.png",
-      "resizeMode": "contain",
+      "image": "./assets/images/splash4.png",
+      "resizeMode": "cover",
       "backgroundColor": "#ffffff"
     },
+    "updates": {
+      "checkAutomatically": "ON_ERROR_RECOVERY",
+      "fallbackToCacheTimeout": 0,
+      "enabled": true,
+      "url": "https://updates.expo.io"
+    },
+    "androidStatusBar": {
+      "backgroundColor": "#fff0",
+      "translucent": true
+    },
+    "notification": {
+      "icon": "./assets/images/ic_stat_onesignal_default.png",
+      "color": "#E31836"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.zimple.srimovil.r2.OneSignalNotificationServiceExtension",
+      // "buildNumber": "1.0.19",
+      "infoPlist": {
+        "NSCameraUsageDescription": "La aplicación usa la cámara del dispositivo para escanear códigos QR para poder iniciar sesión y tomar evidencias de trabajo las cuales serán adjuntadas como resultados de actividades.",
+        "NSLocationWhenInUseUsageDescription": "La aplicación usa la localización del dispositivo para obtener la ubicación actual y poder buscar las tiendas cercanas.",
+        "NSPhotoLibraryUsageDescription": "La aplicación usa la galería del dispositivo para subir fotos de las evidencias de trabajo las cuales serán adjuntadas como resultados de actividades."
+      }
     },
     "android": {
+      "softwareKeyboardLayoutMode": "resize",
+      "package": "com.zimple.aemretailapp",
+      // "versionCode": 119,
+      "blockedPermissions": [
+        "ACCESS_BACKGROUND_LOCATION",
+        "RECORD_AUDIO"
+      ],
+      "permissions": [
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_FINE_LOCATION",
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE",
+        "FOREGROUND_SERVICE",
+        "READ_PHONE_STATE",
+        "EXPO-BARCODE-SCANNER",
+        "NOTIFICATION"
+      ],
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/images/IconoAsturiano.png",
         "backgroundColor": "#ffffff"
       }
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "description": "SRI Movil, coded by Consultoria Digital Zimple",
+    "plugins": [
+      [
+        "onesignal-expo-plugin",
+        {
+          "mode": "development"
+        }
+      ],
+      [
+        "expo-build-properties",
+        {
+          "ios": {
+            "deploymentTarget": "13.4"
+          }
+        }
+      ],
+      "expo-font",
+      "expo-localization",
+      "expo-secure-store"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "c33e3db9-1148-4dea-93de-e4eddd40c2c7"
+      },
+      "onesignal": {
+        "oneSignalAppId": "d6051d46-674b-46bd-89f6-224a886b2573",
+        "oneSignalApiKey": "ZTViODNhNDgtZjU1MC00ZjlhLTg0YmMtZDM5MzEzYzlmOTJh"
+      }
     }
   }
 }
