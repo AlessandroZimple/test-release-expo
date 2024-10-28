@@ -31,7 +31,6 @@
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.zimple.srimovil.r2.OneSignalNotificationServiceExtension",
-      // "buildNumber": "1.0.19",
       "infoPlist": {
         "NSCameraUsageDescription": "La aplicación usa la cámara del dispositivo para escanear códigos QR para poder iniciar sesión y tomar evidencias de trabajo las cuales serán adjuntadas como resultados de actividades.",
         "NSLocationWhenInUseUsageDescription": "La aplicación usa la localización del dispositivo para obtener la ubicación actual y poder buscar las tiendas cercanas.",
@@ -41,7 +40,6 @@
     "android": {
       "softwareKeyboardLayoutMode": "resize",
       "package": "com.zimple.aemretailapp",
-      // "versionCode": 119,
       "blockedPermissions": [
         "ACCESS_BACKGROUND_LOCATION",
         "RECORD_AUDIO"
