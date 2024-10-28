@@ -2,7 +2,7 @@
   "expo": {
     "name": "SRI Movil",
     "slug": "sri-movil",
-    "version": "1.10.0",
+    "version": "1.0.1",
     "owner": "consultoriazimpledev",
     "orientation": "default",
     "icon": "./assets/images/IconoAsturiano.png",
